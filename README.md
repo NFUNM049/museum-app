@@ -49,7 +49,7 @@
 2.小荣行动不便，依靠自动轮椅行动。今天他想要去看博物馆的展览，由于行动不便他不能逛完全部展览，但是他又想看到喜欢的展览。这时他在博物馆的宣传栏中发现了博物馆app的宣传，app里能够为用户提供语音导览以及室内导览服务，这简直太好啦！跟着清晰的地图和导航，小荣没有在路上和找路上花费太多时间，很快找到了目的地，去哪都方便，还提供了专用通道、专用厕所等博物馆内导航服务，而且语音导览为小荣进行展览的讲解，比起看文字，听语音讲解更加方便。小荣对这个app十分满意，它解决了他不少问题。
 
 ### 原型
- * [原型](http://nfunm049.gitee.io/museum-app)，可自行点击查看。
+* [原型](http://nfunm049.gitee.io/museum-app)，可自行点击查看。
 * [原型下载入口](https://gitee.com/NFUNM049/museum-app)，有需要自行下载。
 
 ### api的选择与使用
@@ -67,5 +67,5 @@
 * 选择比较分析：我选择了百度和高德地图的室内地图进行对比分析，二者市场占有以及好评率差不多，但是百度的定价较低，可以节省成本。并且百度结合WI-FI、气压计、蓝牙地磁传感器等定位技术更加先进。
 #### api的使用
 
-2.[语音合成](https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/)
-3.[室内地图](https://lbs.amap.com/api/indoormap-js-api/summary/)
+1.[语音合成](https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/)
+2.[室内地图](https://lbs.amap.com/api/indoormap-js-api/summary/)
