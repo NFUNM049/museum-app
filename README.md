@@ -1,11 +1,13 @@
 # museum-app
 期末博物馆动静结合api项目
 
-发布日期 | 2019-12-16
+
+文档名称 | 博物馆动静结合小程序需求文档
 -|-
+产品名称 | 博物馆服务助手
 文档状态 | 已完成
-小程序名称 | 博物馆动静结合小程序
 文档作者 | 林晓君
+发布日期 | 2019-12-21
 
 ### PRD 价值主张设计
 
@@ -52,20 +54,41 @@
 * [原型](http://nfunm049.gitee.io/museum-app)，可自行点击查看。
 * [原型下载入口](https://gitee.com/NFUNM049/museum-app)，有需要自行下载。
 
+主要功能原型展示：
+
+![博物馆1.png](https://upload-images.jianshu.io/upload_images/9455364-6db64ff29dd85442.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![博物馆2.png](https://upload-images.jianshu.io/upload_images/9455364-8bba8ea167d3dc01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![博物馆3.png](https://upload-images.jianshu.io/upload_images/9455364-8532bd4ec4d6133f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ### api的选择与使用
 #### api的选择
 ##### 1.语音合成
 
-* 服务商：azure语音合成
-* 服务：使用“文本转语音”（语音服务的一部分）来构建提供自然语音的应用和服务。利用多种语言中的各种自然口音，让你的解决方案更贴近人们的生活。利用基于语音合成技术突破性研究成果的神经网络语音合成功能生成逼真语音。对模型自定义，为解决方案和品牌创造独特声音。
-* 选择比较分析：我选择了百度、阿里云、科大讯飞、azure的语音合成进行比较分析，总体来说都不差，但是微软Azure的语音服务会更加成熟，它的语音和声调更加标准，个人觉得是最接近真人的语音服务，且不仅中文，提供的外语语音服务也同样有高质量。在提供外语服务的时候也能够很好的胜任工作。
+* 服务商：百度语音合成
+* 服务：基于业界领先的深度神经网络技术，提供高度拟人、流畅自然的语音合成服务，让您的应用、设备开口说话，更具个性。
+* 选择比较分析：我选择了百度、阿里云、科大讯飞、azure的语音合成进行比较分析，总体来说都不差，但是百度的语音服务会更加容易调用，它的语音和声调标准，个人觉得是最接近真人的语音服务。同时也提供多场景的音库，更加契合使用场景；提供语速音速可调节服务，满足个性化需求；多种调用方式，满足各种需求。另外，购买语音合成服务将会有一定程度上的优惠，性价比高。
+
+![百度语音合成.png](https://upload-images.jianshu.io/upload_images/9455364-1b6bfd75dc20c10b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 代码调用：
+
+![语音合成代码.png](https://upload-images.jianshu.io/upload_images/9455364-21a3f995951853dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ##### 2.室内地图
 
 * 服务商：百度室内地图
 * 服务：商场、火车站、机场找店、找物、找人；停车场找车位定位爱车；医院找科室；实时定位老人小孩位置防止意外发生……百度地图为您提供最*  专业的室内地图和定位服务，帮您解决室内的一切难题。
 * 选择比较分析：我选择了百度和高德地图的室内地图进行对比分析，二者市场占有以及好评率差不多，但是百度的定价较低，可以节省成本。并且百度结合WI-FI、气压计、蓝牙地磁传感器等定位技术更加先进。
+
+![百度室内地图.png](https://upload-images.jianshu.io/upload_images/9455364-6beb0251e19070d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 使用此功能需要联系百度官方进行数据采集。无代码展示。
+
 #### api的使用
 
-1.[语音合成](https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/)
-2.[室内地图](https://lbs.amap.com/api/indoormap-js-api/summary/)
+1.[语音合成](https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-eech/)
+
+2.[室内地图](http://lbsyun.baidu.com/products/products/indoor)
